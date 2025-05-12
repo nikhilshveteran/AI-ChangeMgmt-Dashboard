@@ -28,8 +28,9 @@ page = st.sidebar.radio("Go to:", [
 ])
 
 # ---------------------📂 Load Data ---------------------
-maintenance_df = pd.read_csv('../../data/raw/machine_maintenance_logs.csv')
-survey_df = pd.read_csv('../../data/raw/organizational_readiness_survey.csv')
+maintenance_df = pd.read_csv('../../data/machine_maintenance_logs.csv')
+survey_df = pd.read_csv('../../data/organizational_readiness_survey.csv')
+milestone_df = pd.read_csv('data/change_milestones.csv')
 
 # ADKAR Columns
 adkar_columns = ['awareness', 'desire', 'knowledge', 'ability', 'reinforcement']
