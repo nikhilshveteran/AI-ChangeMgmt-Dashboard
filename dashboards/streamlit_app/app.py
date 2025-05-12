@@ -114,7 +114,7 @@ elif page == "ADKAR Analysis":
 elif page == "Change Timeline":
     st.title("📆 Change Initiative Timeline")
     try:
-        milestone_df = pd.read_csv('../../data/raw/change_milestones.csv')
+        milestone_df = pd.read_csv('data/change_milestones.csv')
         milestone_df['start_date'] = pd.to_datetime(milestone_df['start_date'])
         milestone_df['end_date'] = pd.to_datetime(milestone_df['end_date'])
         fig = px.timeline(milestone_df, x_start="start_date", x_end="end_date",
